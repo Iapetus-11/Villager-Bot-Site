@@ -1,7 +1,5 @@
 export default defineNuxtConfig({
-  meta: {
-    title: 'Villager Bot',
-  },
+  target: 'static',
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -10,4 +8,7 @@ export default defineNuxtConfig({
   },
   css: ['@/assets/globals.css', '@fortawesome/fontawesome-svg-core/styles.css'],
   modules: ['@vueuse/motion/nuxt'],
+  meta: {
+    title: 'Villager Bot',
+  },
 })
