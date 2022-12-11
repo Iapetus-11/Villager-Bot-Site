@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  villager-bot-site:
+    build:
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - "8274:3000"
+    command: "yarn start"
