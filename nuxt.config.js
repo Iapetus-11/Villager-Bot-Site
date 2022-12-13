@@ -12,6 +12,6 @@ export default defineNuxtConfig({
     title: 'Villager Bot',
   },
   head: {
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/villager-bot.webp' }],
   },
 })
