@@ -10,6 +10,6 @@ export default defineNuxtConfig({
   modules: ['@vueuse/motion/nuxt'],
   head: {
     title: 'Villager Bot',
-    link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 })
