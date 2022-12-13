@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  // target: 'static',
+  target: 'static',
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -8,10 +8,8 @@ export default defineNuxtConfig({
   },
   css: ['@/assets/globals.css', '@fortawesome/fontawesome-svg-core/styles.css'],
   modules: ['@vueuse/motion/nuxt'],
-  meta: {
-    title: 'Villager Bot',
-  },
   head: {
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/villager-bot.webp' }],
+    title: 'Villager Bot',
+    link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }],
   },
 })
