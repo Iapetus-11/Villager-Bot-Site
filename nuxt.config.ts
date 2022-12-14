@@ -8,8 +8,10 @@ export default defineNuxtConfig({
   },
   css: ['@/assets/globals.css', '@fortawesome/fontawesome-svg-core/styles.css'],
   modules: ['@vueuse/motion/nuxt'],
-  head: {
-    title: 'Villager Bot',
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  app: {
+    head: {
+      title: 'Villager Bot',
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    },
   },
 })
