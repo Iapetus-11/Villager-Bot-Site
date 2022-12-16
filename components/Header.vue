@@ -36,7 +36,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll, true))
       :class="{ 'opacity-0': scrollPosition <= 0.25 }"
     >
       <img
-        src="~/assets/villager-bot.webp"
+        src="/villager-bot.webp"
         alt="villager-bot"
         class="rounded-full w-10 absolute"
       />

@@ -7,7 +7,7 @@ import FeatureSection from '../components/FeatureSection'
 <template>
   <div class="flex flex-col items-center space-y-5 mt-[10vh]">
     <img
-      src="~/assets/villager-bot.webp"
+      src="/villager-bot.webp"
       alt="villager-bot"
       class="rounded-full w-2/3 md:w-1/3 lg:w-1/4"
     />
