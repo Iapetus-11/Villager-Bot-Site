@@ -16,7 +16,7 @@ import FeatureSection from '../components/FeatureSection'
       <LinkButton
         class="w-2/3 md:w-1/3 lg:w-1/4 xl:w-1/5"
         :icon="faPlus"
-        href="https://top.gg/bot/639498607632056321"
+        href="https://discord.com/oauth2/authorize?client_id=639498607632056321&permissions=1074130126&scope=bot%20applications.commands"
         label="Invite Villager Bot"
       />
     </div>
