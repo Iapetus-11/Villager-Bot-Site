@@ -1,13 +1,20 @@
-FROM node:18.8.0-alpine
+FROM node:18-alpine AS build
 
-RUN mkdir /villager-bot-site
-WORKDIR /villager-bot-site
-
-COPY package*.json ./
-RUN yarn
+WORKDIR /villagerbot.com
 
 COPY . .
+RUN npm i
+RUN npm run build
 
-RUN yarn build
+FROM node:18-alpine AS deploy
 
-CMD [ "yarn", "start" ]
+WORKDIR /villagerbot.com
+
+# copy over necessary files from build stage
+COPY --from=build /villagerbot.com/package.json .
+COPY --from=build /villagerbot.com/.output .
+
+# install prod dependencies
+RUN npm i --omit=dev --omit:optional
+
+CMD ["node", "server/index.mjs"]
